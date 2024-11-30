@@ -8,7 +8,9 @@ StreamTime is a SwiftUI application that allows users to browse and watch videos
 - Navigate to a detailed video player view.
 - Fetch video details using the YouTube Data API.
 
-<img src="https://github.com/user-attachments/assets/82690ebd-3742-45bc-a898-33f85be09bd4" width=200>
+
+<img src="https://github.com/user-attachments/assets/9ebc7bc8-b932-4810-8fa8-f9f071a85a85" width=200>
+
 
 
 ## Requirements
