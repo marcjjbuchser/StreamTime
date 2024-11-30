@@ -7,6 +7,7 @@ StreamTime is a SwiftUI application that allows users to browse and watch videos
 - Display a list of videos with thumbnails and titles.
 - Navigate to a detailed video player view.
 - Fetch video details using the YouTube Data API.
+- Leftnavigation with Hubs/Settings/About
 
 
 <img src="https://github.com/user-attachments/assets/9ebc7bc8-b932-4810-8fa8-f9f071a85a85" width=200>
@@ -40,7 +41,7 @@ StreamTime is a SwiftUI application that allows users to browse and watch videos
 
 4. **Update API Key**
 
-   In `StreamTime/ViewModels/VideoViewModel.swift`, replace `YOUR_API_KEY` with your actual YouTube Data API key:
+   In `StreamTime/Config.swift`, replace `YOUR_API_KEY` with your actual YouTube Data API key:
 
    ```swift
    let apiKey = "YOUR_API_KEY"
@@ -48,7 +49,7 @@ StreamTime is a SwiftUI application that allows users to browse and watch videos
 
 5. **Add Video IDs**
 
-   Update the `videoIds` variable in `VideoViewModel.swift` with the actual video IDs you want to display:
+   Update the `videoIds` variable in `Config.swift` with the actual video IDs you want to display:
 
    ```swift
    let videoIds = "VideoID_01,VideoID_02,VideoID_03"
