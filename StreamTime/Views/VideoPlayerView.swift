@@ -17,7 +17,7 @@ struct VideoPlayerView: View {
                 .frame(height: 300)
                 .onAppear {
                     // Load the video using AVPlayer
-                    if let videoURL = URL(string: "https://www.youtube.com/watch?v=\(video.id)") {
+                    if let videoURL = URL(string: video.videoURL) {
                         player = AVPlayer(url: videoURL)
                         player?.play() // Auto-play the video
                     }
@@ -27,13 +27,13 @@ struct VideoPlayerView: View {
                 }
 
             // Description and other information
-            Text(video.description) // Assuming you have a description property in your Video model
+            Text(video.description)
                 .font(.body)
                 .padding()
                 .foregroundColor(.gray) // Ensure description is visible
 
             // Additional information fields
-            Text("Additional Info: \(video.additionalInfo)") // Replace with actual properties
+            Text("Additional Info: \(video.additionalInfo)")
                 .font(.subheadline)
                 .foregroundColor(.gray)
                 .padding()
