@@ -4,8 +4,8 @@ class VideoViewModel: ObservableObject {
     @Published var videos: [Video] = []
     
     func fetchVideos() {
-        let videoIds = "FbCA_qQSvYM,oe3Jn6FRoII,DREqX76oOLc,ftPYM2pCtsQ,WTqEwYrkiMY"
-        let apiKey = "AIzaSyAJDACH6A_rzYYw5JVhx3eHakdHNQDleqE"
+        let videoIds = Config.videoIds
+        let apiKey = Config.apiKey
         let urlString = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=\(videoIds)&key=\(apiKey)"
 
         guard let url = URL(string: urlString) else { return }
